@@ -1,0 +1,49 @@
+{
+  "name": "icapps-translations",
+  "version": "0.0.2",
+  "description": "Import and use translations from icapps translation service",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf ./lib/*",
+    "build": "npm run clean && tsc",
+    "lint": "tslint 'src/**/*.ts'",
+    "test": "jest",
+    "test:coverage": "jest --coverage --collectCoverageFrom=src/**/*.ts",
+    "test:watch": "jest --watchAll",
+    "pretest": "npm run build",
+    "prepare": "npm run build",
+    "release": "node_modules/np/source/cli.js --no-cleanup"
+  },
+  "bin": {
+    "translations": "./bin/translations"
+  },
+  "precommit": [
+    "lint",
+    "build"
+  ],
+  "dependencies": {
+    "commander": "~9.3.0",
+    "del": "~6.1.1",
+    "inquirer": "~8.2.4",
+    "mkdirp": "~1.0.4",
+    "node-fetch": "~2.6.1",
+    "plist": "~3.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "~28.1.1",
+    "@types/mkdirp": "~1.0.2",
+    "coveralls": "~3.1.1",
+    "jest": "~28.1.1",
+    "np": "~7.6.1",
+    "rimraf": "~3.0.2",
+    "ts-jest": "~28.0.4",
+    "tslint": "~5.11.0",
+    "tslint-config-airbnb": "~5.11.2",
+    "typescript": "~4.7.3"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "ISC"
+}

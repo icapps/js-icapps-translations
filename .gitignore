@@ -1,1 +1,35 @@
+# Build folder output
+build
+/lib
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
 node_modules
+
+# Editor
+.idea
+.vscode
+
+# NPM
+.npm
+
+# Yarn
+.yarnclean
+yarn-error.log
+
+# Folders with locales
+src/locales/
+locales/

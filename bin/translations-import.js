@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 var program = require('commander');
 var importTranslations = require('../lib').import;
 

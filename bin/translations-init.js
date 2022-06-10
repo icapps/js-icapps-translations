@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 var program = require('commander');
 var initTranslations = require('./../lib').init;
 
@@ -13,7 +13,7 @@ console.log('you created a configuration file with:');
 if (program.opts().token) console.log(`token: ${program.opts().token}`);
 if (program.opts().translationsPath) console.log(`translations path: ${program.opts().translationsPath}`);
 
-return initTranslations(
+initTranslations(
   {
     verbose: program.opts().verbose,
   }

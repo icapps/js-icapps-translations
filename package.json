@@ -16,7 +16,7 @@
     "release": "node_modules/np/source/cli.js --no-cleanup"
   },
   "bin": {
-    "translations": "./bin/translations"
+    "translations": "./bin/translations.js"
   },
   "precommit": [
     "lint",

@@ -1,5 +1,5 @@
 {
-  "name": "icapps-translations",
+  "name": "@icapps/translations",
   "version": "0.0.2",
   "description": "Import and use translations from icapps translation service",
   "main": "lib/index.js",
